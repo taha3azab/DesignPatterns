@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Name="" xmlns="http://www.tangiblearchitect.com/dsltools/ClassDiagrams">
+  <ArrayOfStereoType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <StereoType>
+      <StereoTypeName>ModelRoot</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.ModelRoot</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>ModelClass</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.ModelClass</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>ModelInterface</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.ModelInterface</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>ModelAttribute</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.ModelAttribute</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>InterfaceOperation</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.InterfaceOperation</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>ClassOperation</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.ClassOperation</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Implementation</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.Implementation</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Association</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.Association</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>MultipleAssociation</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.MultipleAssociation</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Generalization</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.Generalization</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+    <StereoType>
+      <StereoTypeName>Comment</StereoTypeName>
+      <BaseModelElementTypeFullName>tangible.Modelling.ClassDiagrams.Comment</BaseModelElementTypeFullName>
+      <DefinedProperties />
+    </StereoType>
+  </ArrayOfStereoType>
+  <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+  <Comments>
+    <Comment Id="5ea2435f-fe28-45dd-b9a8-99526d70f5dc" Text="Request( ) invokes SpecificRequest( )">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <Subjects>
+        <ModelClassMoniker Name="//Adapter" />
+      </Subjects>
+    </Comment>
+  </Comments>
+  <Types>
+    <ModelClass Name="Client">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+    </ModelClass>
+    <ModelInterface Name="ITarget">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <Operations>
+        <InterfaceOperation Name="Reques()">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </InterfaceOperation>
+      </Operations>
+      <Implementors>
+        <Implementation Id="3b2faf1f-e45e-4db5-a39c-d427f6c49e3c">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <ModelClassMoniker Name="//Adapter" />
+        </Implementation>
+      </Implementors>
+    </ModelInterface>
+    <ModelClass Name="Adaptee">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <Operations>
+        <ClassOperation Name="SpecificRequest()" IsAbstract="false">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </ClassOperation>
+      </Operations>
+      <Subtacls>
+        <Generalization>
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+          <ModelClassMoniker Name="//Adapter" />
+        </Generalization>
+      </Subtacls>
+    </ModelClass>
+    <ModelClass Name="Adapter">
+      <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+      <Operations>
+        <ClassOperation Name="Request( )" IsAbstract="false">
+          <ArrayOfExtensiblePropertyInstance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />
+        </ClassOperation>
+      </Operations>
+    </ModelClass>
+  </Types>
+</ModelRoot>
