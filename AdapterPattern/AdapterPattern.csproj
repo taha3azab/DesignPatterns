@@ -43,10 +43,12 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TwoWayAdapterPattern.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="ClassDiagrams1.tacls" />
     <None Include="ClassDiagrams1.tacls.diagram">
       <DependentUpon>ClassDiagrams1.tacls</DependentUpon>
