@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
@@ -40,10 +36,7 @@ namespace AdapterPattern
         public Adapter2(Adaptee2 adaptee)
         {
             // Set the delegate to the new standard
-            Request = delegate(int i)
-                          {
-                              return string.Format("Estimate based on precision is {0}", (int) Math.Round(Precise(i, 3)));
-                          };
+            Request = i => string.Format("Estimate based on precision is {0}", (int) Math.Round(Precise(i, 3)));
         }
 
         // Adapter-Target
@@ -56,7 +49,8 @@ namespace AdapterPattern
 
     internal class Client
     {
-        private static void Main3()
+/*
+        private static void Main()
         {
 
             Adapter2 adapter1 = new Adapter2(new Adaptee2());
@@ -66,5 +60,6 @@ namespace AdapterPattern
             Console.WriteLine(adapter2.Request(5));
 
         }
+*/
     }
 }

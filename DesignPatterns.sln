@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D483B1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "AdapterPattern\AdapterPattern.csproj", "{D4C0C7BE-D696-43B5-BF42-BD62F3C19ED8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BridgePattern", "BridgePattern\BridgePattern.csproj", "{7D8D0339-23B2-47B3-99AB-1DFC62BB420C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{D4C0C7BE-D696-43B5-BF42-BD62F3C19ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C0C7BE-D696-43B5-BF42-BD62F3C19ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4C0C7BE-D696-43B5-BF42-BD62F3C19ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8D0339-23B2-47B3-99AB-1DFC62BB420C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8D0339-23B2-47B3-99AB-1DFC62BB420C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8D0339-23B2-47B3-99AB-1DFC62BB420C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8D0339-23B2-47B3-99AB-1DFC62BB420C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
