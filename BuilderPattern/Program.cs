@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BuilderPattern
 {
@@ -10,6 +7,11 @@ namespace BuilderPattern
     {
         static void Main(string[] args)
         {
+            new Sandwich(BreadType.Wheat, false, CheesType.American, MeatType.Turkey, false, false,
+                         new List<string> {"Tomato"}).Display();
+
+
+            Console.ReadKey();
         }
     }
 }
