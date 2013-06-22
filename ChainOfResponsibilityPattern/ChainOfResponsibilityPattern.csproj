@@ -41,6 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApprovalResponse.cs" />
+    <Compile Include="ConsoleInput.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="EndOfChainExpenseHandler.cs" />
+    <Compile Include="ExpenseHandler.cs" />
+    <Compile Include="ExpenseReport.cs" />
+    <Compile Include="IExpenseApprover.cs" />
+    <Compile Include="IExpenseHandler.cs" />
+    <Compile Include="IExpenseReport.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
